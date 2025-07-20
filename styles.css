@@ -1,0 +1,393 @@
+
+
+
+
+
+body{
+    margin:0;
+    min-height:2000px;
+
+}
+h1{
+    font-family: "sofia-pro-condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+h2, h3, h4{
+    font-family: "sofia-pro-condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+p{
+    font-family: "benton-modern-display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+}
+a, button{
+    font-family: "benton-modern-display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:18px;
+}
+
+.hidden{
+    display:none;
+}
+#navigation{
+    margin-top:auto;
+    min-height:20%;
+    flex-shrink:1;
+    height:40%;
+    padding-bottom:0;
+    margin-bottom:0;
+    button{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:100%;
+        height:25%;
+        border:none;
+        background:none;
+
+    }
+    .active:hover{
+        cursor:pointer;
+        /* background:lightgrey; */
+        background-color: rgb(149, 162, 136);
+    }
+    .disabled{
+        /* background:lavender; */
+        /* background:rgb(133,157,166); */
+        background-color: rgb(149, 162, 136);
+    }
+    .disabled:hover{
+        cursor:default;
+    }
+    .icon{
+        size:40px;
+        margin-left:auto;
+    }
+    
+    
+}
+#linkToPage{
+    text-decoration:underline;
+    color:black;
+}
+#linkToPage:hover{
+    cursor:pointer;
+    color: rgb(149, 162, 136);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.container{
+    display:flex;
+    flex-flow:row wrap;
+    text-align:center;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+#left{
+    position:fixed;
+    height:100%;
+    margin-left:0;
+    
+    display:flex;
+    flex-flow:column;
+    margin-bottom:0;
+    /* background-color:rgb(173, 216, 230); */
+    background-color: rgb(184, 204, 162);
+    h1{
+        margin-top:10px;
+    }
+    h2{
+        margin-top:5px;
+        font-size:20px;
+        margin-bottom:2px;
+    }
+    h3{
+        margin-top:0;
+        margin-bottom:0px;
+    }
+    h4{
+        margin-top:0;
+    }
+    width:23%;
+    
+}
+#pf{
+    margin-left:5%;
+    margin:0 auto;
+    width:75%;
+    border-radius:180px;
+    object-fit:contain;
+    margin-top:15px;
+}
+
+.addresses{
+    
+    margin:0 auto;
+    font-size:20px;
+    padding-top:0.5em;
+    padding-bottom:2.0em;
+    
+    a{
+        color:black;
+    }
+    a:hover{
+        color:white;
+    }
+}
+#banner{
+    margin-top:0;
+    padding:50px;
+    width:100%;
+    display:flex;
+    flex-flow:row;
+    align-items:center;
+    background-color:slateblue;
+}
+h1{
+    width:80%;
+    margin:0 auto;
+    padding-left:0;
+    padding-top:10px;
+}
+#right-home{
+    margin-left:23%;
+    width:77%;
+    h1{
+        margin-top:15px;
+    }
+    
+}
+.textSection{
+    border-bottom: solid black 1px;
+
+}
+#text-box{
+    width:80%;
+    margin-left:8%;
+    h2{
+        text-align: left;
+        padding-top:20px;
+        
+    }
+    h3{
+        padding-top:20px;
+    }
+    p{
+        font-size:20px;
+        line-height:1.3em;
+        text-align:left;
+        padding-bottom:10px;
+        
+    }
+}
+.radioShowSplit{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    p{
+        max-width:500px;
+    }
+    
+}
+#jamokers{
+    width:30%;
+    margin-right:50px;
+    margin-bottom:20px;
+}
+#resume{
+    position:relative;
+}
+.resume-Download{
+    width:fit-content;
+    padding:2%;
+    border: 4px solid rgb(184, 204, 162);
+    margin:0 auto;
+    position:absolute;
+    top:4%;
+    left:43%;
+    color:black;
+    text-decoration:none;
+}
+#BF{
+    text-align:right;
+    margin-right:80px;
+    p{
+        padding-bottom:0;
+        margin-bottom:0;
+    }
+}
+video{
+    margin-bottom:20px;
+}
+.BF-Button{
+    display:inline-block;
+    padding:10px;
+    border: 2px solid rgb(184, 204, 162);
+    color:black;
+    text-decoration:none;
+    margin-bottom:10px;
+    
+    
+}
+.BF-Button:hover{
+    background-color: rgb(184, 204, 162);
+}
+.resume-Download:hover{
+    background-color:rgb(184, 204, 162);
+    cursor:pointer;
+}
+#resPng{
+    width:100%;
+}
+.hoverSub{
+    font-size:40px;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+}
+#skills{
+    ul{
+        list-style-type: none;
+        padding-left:0;
+        margin-bottom: 0 30px;
+
+    }
+    p{
+        font-size:16px;
+    }
+    
+    /* color:white;
+    background-color: rgb(39,47,77); */
+    
+}
+
+.grouping{
+    padding:10px 0;
+    ul{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-evenly;
+        align-items:center;
+        perspective:1000px;
+        li{
+            width: 200px; /* Set a fixed width for your card */
+             /* Set a fixed height for your card */
+            height:200px;
+            position: relative; /* Needed for child absolute positioning if needed, or just for context */
+            /* These styles define the card's overall appearance, moved from .skillModal */
+            border: 2px solid black;
+            background-color: white; /* Default background for the card */
+            border-radius: 20px;
+            box-shadow: 5px 3px black;
+            overflow: hidden; /* Ensures content respects border-radius during flip */
+            display: flex; /* Helps ensure .skillModal fills the li */
+            justify-content: center; /* Helps center .skillModal if it's smaller than li */
+            align-items: center; /* Helps center .skillModal if it's smaller than li */
+            margin-bottom:10px;
+        }
+    }
+    h2{
+        padding-bottom:5px;
+    }
+    margin-bottom:15px;
+    /* background-color:rgb(161, 170, 204); */
+    border-radius:15px;
+    list-style-type:none;
+    
+    
+}
+.skillModal{
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    width:100%;
+    height:100%;
+    padding:10px 20px;
+    position:relative;
+    img{
+        width:200px;
+        padding:5px;
+        width:100px;
+        height:100px;
+        object-fit:contain;
+        
+    }
+    #swift{
+        border-radius:40px;
+
+    }
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out; 
+}
+.flipOver{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back of the back card when not flipped */
+    transform: rotateY(180deg); /* Starts rotated 180deg, so it's initially hidden */
+    /* Styles for the content on the back side */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    padding: 10px 15px; /* Adjust padding as needed for back content */
+    box-sizing: border-box;
+    background-color: white; /* Example: A different background color for the back */
+    color: black; /* Text color for the back */
+    border-radius: inherit; /* Inherit border-radius from li */
+    text-align: center;
+    overflow: auto; /* Add if content might overflow */
+}
+.flipOver h3{
+    margin:0 0;
+    padding:0;
+}
+.flipOver p{
+    margin:0 0;
+    padding:5px 0 0 0;
+}
+li:hover > .skillModal{
+    transform:rotateY(180deg);
+}
+.skill-front{
+    height:100%;
+    display:flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content: center;
+}
+#amp{
+    width:30%;
+    margin:0 auto;
+}
+#about{
+    
+    h1, p{
+        text-align:left;
+        max-width:80%;
+        margin-left:60px;
+    }
+}
+#hikePic{
+    width:42%;
+}
+#siblingPic{
+    width:55%;
+}
+#racePic{
+    width:80%;
+}

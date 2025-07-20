@@ -1,1 +1,373 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Coveney</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" />
+    <link rel="stylesheet" href="https://use.typekit.net/xcv4olb.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ksb2bnu.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xcv4olb.css">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div id="left">
+            <img id="pf" src="images/pfp.jpg" alt="A picture of me">
+            <h1>Liam Coveney</h1>
+            <h2>Senior, Indiana University</h2>
+            <h3>B.S. in Computer Science</h3>
+            <h4>Expected Graduation: Spring 2026</h4>
+            <div class="addresses">
+                <address><a href="tel:+13177646005">317-764-6005</a></address>
+                <address><a href="mailto:coveneyliam@gmail.com">coveneyliam@gmail.com</a></address>
+                <address><a href="https://www.linkedin.com/in/liamcoveney/" target="_blank">linkedin.com/in/liamcoveney</a></address>
+                <address><a href="https://github.com/liam-coveney/Work-Experience" target="_blank">github.com/liam-coveney</a></address>
+
+            </div>
+            <div class="navigation"id="navigation">
+                <button id="text-boxB" class="disabled"><span class="button-text">Home</span><span class="material-symbols-outlined icon">chevron_right</span></button>
+                <button id="resumeB" class="active"><span class="button-text">My Resume</span><span class="material-symbols-outlined icon">chevron_right</span></button>
+                <button id="skillsB" class="active"><span class="button-text">My Skills</span><span class="material-symbols-outlined icon">chevron_right</span></button>
+                <button id="aboutB" class="active"><span class="button-text">About Me</span><span class="material-symbols-outlined icon">chevron_right</span></button>
+                
+            </div>
+        </div>
+        <div class="rightContainer" id="right-home">
+            <div class="text" id="text-box">
+                <div class="textSection">
+                    <h2 id="linkToPage">About Me</h2>
+                </div>
+                
+                <div class="textSection">
+                    <h2>Freelance Consulting and Web Development</h2>
+                    <p>I worked as the principal developer with an artist and a member of the arts community that functioned as the creative director,
+                        to build a website to suit the needs of the local music community in Bloomington. We worked together closely through several
+                        iterations to ensure the client got the product that would make them most satisfied. It includes media from and about shows
+                        including pictures and blog posts, hosts articles written by creatives, and provides a calendar promoting events and 
+                        giving artists and venues a way to connect with each other to more easily book shows. I plan to expand the website throughout
+                        this year to include a section for selling merchandise which I will receive a small commission for, and to allow for more users
+                        interaction including a place for comments and reactions. I hope to expand this to be able to work with other artists and help
+                        them fulfill their online presence needs. Check out the website!
+                    </p>
+                </div>
+                <div class="textSection">
+                    <h2>Mobile App Development</h2>
+                    <p>I'm currently developing an app called RaveReview that will allow users to connect with each other and share experieneces they've had at concerts and 
+                        live events. Shows, Venues, Tours, and Artists have ratings on a scale from 1-11, with users leaving individual reviews of their 
+                        experience and pictures/short videos from the shows viewable by their friends and the entire app community. I'm developing the app
+                         in XCode using Swift with SwiftUI and the project is nearing completion, connected to Firebase, and is close to having full functionality.
+                    </p>
+                </div>
+                <div class="textSection">
+                    <h2>J.M. DREW</h2>
+                    <p>Last summer I had the pleasure of interning for J.M. DREW LLC, an advising firm for 
+                        Patient Access and Product Distribution for Specialty Pharmeceuticals and Healthcare. I 
+                         analyzed and reported on trends in the Specialty Pharmeceuticals industry, and worked
+                         with fellow interns and professionals to deliver projects and presentations on my findings.
+                    </p>
+                </div>
+
+                <div class="textSection">
+                    <h2>Catan A.I.</h2>
+                    <p>For my final project in an A.I. class I took, collaborating with 2 classmates using Github I developed a model
+                        that is able to make intelligent decisions in the game of Catan. We used a forward checking
+                        n-max algorithm that achieved significant success against bots and human players, with a 95% win rate against random
+                        bots and significantly higher average points earned in a game. Our model differs
+                        from others online by implementing trading and smart decision making for the first two(settlement) rounds.
+                        This allows for a more complete playthrough of the game whereas others focus on just the main game rounds 
+                        and many without trading. We tested our A.I. player using a model we adapted from one online on
+                        <a href="https://github.com/kvombatkere/Catan-AI.git" target="_blank" id="linkToPage">another github project</a>. This
+                        project was based on a similar idea, but we made sure to differ ours from theirs as mentioned above. 
+                        See my team's full project and report on my github linked on the side. if you'd like to play/watch it yourself 
+                        download the files on my github and run HumanGame.py or BotGame.py
+                        depending on whether you want to play or not. Watch it play a game agains random bots below!
+                         It's one quick game but you can see that our player (Red) makes much more intelligent structures than the bots and 
+                         prioritizes game mechanics that maximize points: Longest Road, Largest Army, and building settlements tactically
+                         for the most rolls and resources.
+                    </p>
+                    <video width="800" controls muted>
+                        <source src="images/CatanGameDemo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                
+                <div class="textSection">
+                    <h2>Burkina Faso Data Analysis Project</h2>
+                    <p id="BF">For a Data Mining & Analytics class that I took Junior year, I had a lot of freedom to decide what my final
+                        project would be. I chose to analyze how effective humanitarian and developmental aid packages had been to 
+                        the development of Burkina Faso. I mined data for markers of a country's development such as literacy,
+                        maternal mortality, life span, and GDP, and analyzed the correlation their change had with humanitarian and
+                        developmental aid spending. This was especially challenging because of the lack of good data in Burkina Faso,
+                        but I ended with a final project I was very proud of. Check it out on my github or download it below!
+                    </p>
+                    <div id="BF">
+                        <a href = "images/B-365-BF-FinalReport-LiamCoveney.pdf" download="images/B-365-BF-FinalReport-LiamCoveney.pdf" class="BF-Button">Download</a>
+
+                    </div>
+                    
+                </div>
+
+                
+                <div class="textSection">
+                    <h2>W.I.U.X. Student Radio</h2>
+                    <h3>Telecast Zine</h3>
+                    <p>I regularly write an Album Review column for The Telecast Zine, W.I.U.X.'s student mini magazine. Telecast
+                        gathers art and media from a lot of the creative and arts community in Bloomington and puts it all together.
+                         I've had the pleasure of contributing through a column where I review my favorite new albums. Check out some of my reviews below!
+                    </p>
+                    <object data="/images/Zine-Album-Reviews.pdf" type="application/pdf" width="100%" height="500px">
+                        <p>Unable to display PDF file. <a href="/images/Zine-Album-Reviews.pdf">Download</a> instead.</p>
+                    </object>
+                    <h3>My Radio Show</h3>
+                    <div class="radioShowSplit">
+                        <p>Along with the Zine and helping with events, I host a radio show with two cohosts every Saturday from 12pm-1pm. 
+                        We play our favorite songs we've been listening to each week and talk about them and with each other. We've met a lot
+                        of cool people from being involved with student radio.
+                        </p>
+                        <img src="images/Jamokers.jpeg" alt="My Radio Cohosts" id="jamokers">
+                    </div>
+                </div>
+                <div class="textSection">
+                    <h2>Music Industry Creatives (M.I.C.)</h2>
+                    <p>M.I.C. is a club at I.U. whose goal it is to connect local musicians with audiences.
+                        They provide musicians with resources, build community among music listeners in Bloomington,
+                        and host music festivals and events. I've helped to produce these events and volunteer regularly
+                        at their yearly festival.
+                    </p>
+                </div>
+            </div>
+            <div id="resume"class= "text hidden">
+            <h1>My Resume</h1>
+            <a  href= "images/Liam-Coveney-Resume-Summer-2025.pdf" download="Liam-Coveney-Resume-Summer-2025.pdf" class="resume-Download">Download PDF</a>
+            <!-- Modal -->
+            <!-- <iframe type= "application/pdf"class="resumeIframe" src="images/Coveney-Liam Resume 2025.pdf"></iframe> -->
+            <img id="resPng" src="images/resume.jpg" alt="my resume">
+            </div>
+            <div class="text hidden"id="skills">
+                <h1>About My Skills</h1>
+                <ul>
+                    <li> <div class="grouping" id="languages">
+                        <h2>Programming Languages</h2>
+
+                        <ul>
+                            <li><div class="skillModal">
+                                    <div class="skill-front"><img src="images/Java.png" alt="Java Logo"><h3>Java</h3></div>
+                                    <div class="flipOver">
+                                        <h3>4 Years</h3>
+                                        <p>I've used java since I started programming in my coursework and personal projects. I used it extensively 
+                                            for data structures and sorting algorithms.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><div class="skillModal"><div class="skill-front"><img src="images/python.png" alt="Python Logo"><h3>Python</h3></div>
+                                <div class="flipOver">
+                                        <h3>5 Years</h3>
+                                        <p>The first language I learned, I've used Python as my primary language, applying it for purposes such as
+                                            data analysis and artificial intelligence.
+                                        </p>
+                                    </div>
+                                </div></li>
+                            <li><div class="skillModal"><div class="skill-front"><img src="images/R.png" alt="R Logo"><h3>R</h3></div>
+                                    <div class="flipOver">
+                                        <h3>1 Year</h3>
+                                        <p>I've used R for various statistics and data analysis projects.
+                                        </p>
+                                    </div></div></li>
+                            <li><div class="skillModal"><div class="skill-front"><img id="swift"src="images/Swift.jpeg" alt="Swift Logo"><h3>Swift</h3></div>
+                                <div class="flipOver">
+                                        <h3>2 Years</h3>
+                                        <p>I learned Swift in a mobile development class and have used it extensively since then in personal and freelance projects.
+                                            I primarily use SwiftUI.
+                                        </p>
+                                </div>
+                            </div></li>
+                            
+                        </ul>
+                    </div></li>
+                    <li>
+                        <div class="grouping" id="web">
+                            <h2>Web Development & Full Stack Engineering</h2>
+                            <ul>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/HTML.png" alt="HTML Logo"><h3>HTML</h3></div>
+                                    <div class="flipOver">
+                                        <h3>3 Years</h3>
+                                        <p>One of my strongest languages, I use HTML regularly making websites for personal projects and freelance websites for the 
+                                            Bloomington arts community.
+                                        </p>
+                                    </div>
+                                </div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/CSS.png" alt="CSS Logo"><h3>CSS</h3></div>
+                                    <div class="flipOver">
+                                        <h3>3 Years</h3>
+                                        <p>Along with HTML I use CSS regularly to design my websites. It's one of my favorites because I can directly
+                                            see the changes I make!
+                                        </p>
+                                    </div>
+                                </div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/Javascript.jpg" alt="Javascript Logo"><h3>Javascript</h3></div>
+                                    <div class="flipOver">
+                                        <h3>2 Years</h3>
+                                        <p>Once I understood HTML and CSS I was able to master and incorporate useful and engaging JS into my sites.
+                                            It's also one of my favorites because it allows me to be creative!
+                                        </p>
+                                    </div>
+                                </div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/php.png" alt="Javascript Logo"><h3>PHP</h3></div>
+                                    <div class="flipOver">
+                                        <h3>1 Year</h3>
+                                        <p>I took a crash course in CGI and PHP that was really interesting to me. Though I don't use them often,
+                                            they helped me gain a broader understanding of Server-side development.
+                                        </p>
+                                    </div>
+                                </div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/React.jpg" alt="Javascript Logo"><h3>React</h3></div>
+                                <div class="flipOver">
+                                        <h3>1 Year</h3>
+                                        <p>I've used React along with Babel to make my personal project development much more efficient since taking a course and earning a certificate. See it on my LinkedIn!
+                                        </p>
+                                    </div>
+                                </div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/flaskPython.png" alt="Flask Python Logo"><h3>Flask Python</h3></div>
+                                <div class="flipOver">
+                                        <h3>1 Year</h3>
+                                        <p>I've been using Flask a lot recently in my personal projects to develop server-side code and manage connections.
+                                        </p>
+                                    </div>
+                                </div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/nodejs.png" alt="Flask Python Logo"><h3>Node.js</h3></div>
+                                    <div class="flipOver">
+                                        <h3>1 Year</h3>
+                                        <p>I regularly use Node in development projects to run Javascript and develop server-side code.
+                                        </p>
+                                    </div>
+                                </div></li>
+                            </ul>
+                        </div>
+                    </li>
+                   <li>
+                        <div class="grouping" id="dataAnalysis">
+                            <h2>Data Mining & Machine Learning</h2>
+
+                            <ul>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/SQL.png" alt="SQL Logo"><h3>SQL</h3></div>
+                                <div class="flipOver">
+                                        <h3>2 Years</h3>
+                                        <p>I have a certificate and SQL and use it regularly to manage databases with SQLite. I like it because it's simple
+                                            and lets me sort data easily.
+                                        </p>
+                                </div>
+                                </div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/tensorflow.jpg" alt="tesnsorflow Logo"><h3>Tensorflow</h3></div>
+                                <div class="flipOver">
+                                        <h3>1 Year</h3>
+                                        <p>I used TensorFlow in my Machine Learning class for training neural networks.
+                                        </p>
+                                </div></div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/Pandas.png" alt="pandas logo"><h3>Pandas</h3></div>
+                                <div class="flipOver">
+                                        <h3>1 Year</h3>
+                                        <p>I've used Pandas for various data analysis projects including my Burkina Faso Project.
+                                        </p>
+                                </div></div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/Numpy.png" alt="numpy logo"><h3>Numpy</h3></div>
+                                <div class="flipOver">
+                                        <h3>1 Year</h3>
+                                        <p>I used Pandas in my Data Analysis class for extracting meaningful information from large collections of data.
+                                        </p>
+                                </div></div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/ScikitLearn.png" alt="scikit learn logo"><h3>Scikit-Learn</h3></div>
+                                <div class="flipOver">
+                                        <h3>1 Year</h3>
+                                        <p>I used Sci-Kit Learn in my Machine Learning class and learned algorithms for machine learning and predictive data analysis.
+                                        </p>
+                                </div></div></li>
+                            </ul>
+                            
+                        </div>
+                   </li>
+                    <li>
+                        <div class="grouping" id="cloud">
+                            <h2>Cloud Computing & Tools</h2>
+
+                            <ul>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/AWS.png" alt="AWS Logo"><h3>AWS</h3></div>
+                                    <div class="flipOver">
+                                        <h3>1 Year</h3>
+                                        <p>I've used AWS in my personal projects for cloud computing and managing APIs since taking a course and earning a certificate. See it on my LinkedIn!
+                                        </p>
+                                    </div>
+                                </div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/Git.png" alt="Git Logo"><h3>Git</h3></div>
+                                    <div class="flipOver">
+                                        <h3>4 Years</h3>
+                                        <p>I've used Git and Github extensively to collaborate on projects and for version control.
+                                        </p>
+                                    </div>
+                                </div></li>
+                                <li><div class="skillModal"><div class="skill-front"><img src="images/Linux.jpeg" alt="Linux Logo"><h3>Linux</h3></div>
+                                </div></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="text hidden" id="about">
+                <h1>Hi! I'm Liam</h1>
+                <p>Outside of Computer Science I'm passionate about music, my local community, and cars.
+                    I spend most of my weekends in Bloomington going to local bands' shows, driving my friends through winding forest roads in my convertible,
+                    or playing soccer with my intramural teammates whether on or off season. I regularly
+                    take hours-long walks, usually listening to songs I like on repeat
+                    and regularly getting upwards of 20,000 steps per day. I'm not an artist but I'm lucky enough to be
+                    close friends with many whose work I really love. I try
+                    to support the local arts community however I can, whether that's volunteering to help
+                    at a club's music festival, making websites for artists and the community as a whole, or playing
+                    local bands' new releases on my radio show. I also write a column in my club's zine, "Telecast", in 
+                    which I review my 3 favorite recent albums.
+                </p>
+                <p>The most important aspect of my life is definitely my friends and I try to spend as much time with them as possible.
+                    After Catan night on Wednesday I get poke bowls with my radio cohosts before our show, host a movie or mario kart night every Saturday,
+                    and there's no better feeling than helping my friends when something in their car isn't working. 
+                    I'm lucky enough to be close with a lot of talented people and have
+                    been able to work with them on projects, be them mine or theirs. My friends have designed websites I then created,
+                     helped me come up with branding strategies, and brainstormed names for my app. 
+                    
+                </p>
+                <img src="images/goodPicOfMe2.jpg" alt="Local Music Festival Crowd focused on me" id="amp">
+                <p>I have diverse academic interests, supplementing my STEM curriculum with literature heavy Philosophy classes
+                    and by exploring whatever historical topic I find interesting at the time; recently I've been interested
+                    in the origins of different religions and the commonalities between them. While I love to solve a Computer Science puzzle
+                    with technical thinking, I also really enjoy studying and reflecting on human topics.
+                    I spend a lot of time researching and learning about cars; with an aspirational project of swapping a manual transmission into my 1999 Saab 9-3 on my
+                    to-do list, I have a lot to learn.
+                </p>
+                <p>Inside STEM I feel most at-home in fields that allow me to use my creativity and passions.
+                    My experiences in Web/Mobile Development, Data Analysis, and Artificial Intelligence, especially AI Ethics
+                    thus far have allowed me to answer questions I had and build systems or products I'm excited by.
+                    With my personal, freelance, and class projects I've been able to explore and combine what I'm most enthusiastic about with my 
+                    computer science expertise. I made a website to increase accesibility to my local music community, made
+                    an app that lets users connect over their experiences at concerts and live shows, studied countries I'm interested in,
+                     and made an AI that intelligently plays Catan. These projects have proven to me that mostly anything I could want to achieve
+                     with computer science is within my grasp and have inspired me to continue to pursue my education with passion and curiosity.
+                </p>
+                <img src="images/Hike.jpg" alt="Hike with friends" id="hikePic">
+                <img src="images/SiblingPic.jpg" alt="Trip to Ireland with Siblings" id="siblingPic">
+
+                <img src="images/GroupRacePic.jpg" alt="Friends at a cycling race" id="racePic">
+            </div>
+            
+
+            
+        </div>
+        
+    </div>
+    
+    <script src="index.js"></script>
+    
+    
+</body>
+</html>
