@@ -73,6 +73,9 @@ a, button{
     
     
 }
+.pdf-container{
+    overflow:hidden;
+}
 #linkToPage{
     text-decoration:underline;
     color:black;

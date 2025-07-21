@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ensures scroll happens after layout and content settle
         setTimeout(() => {
             window.scrollTo(0, 0);
-        }, 0);
+        }, 10);
     });
 
     window.addEventListener("beforeunload", function () {
