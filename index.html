@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liam Coveney</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://use.typekit.net/xcv4olb.css">
     <link rel="stylesheet" href="https://use.typekit.net/ksb2bnu.css">
     <link rel="stylesheet" href="https://use.typekit.net/xcv4olb.css">
+    
     <link rel="stylesheet" href="Normalize.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -16,17 +17,21 @@
     <div class="container">
         <div id="left">
             <img id="pf" src="images/pfp.jpg" alt="A picture of me">
-            <h1>Liam Coveney</h1>
-            <h2>Senior, Indiana University</h2>
-            <h3>B.S. in Computer Science</h3>
-            <h4>Expected Graduation: Spring 2026</h4>
-            <div class="addresses">
-                <address><a href="tel:+13177646005">317-764-6005</a></address>
-                <address><a href="mailto:coveneyliam@gmail.com">coveneyliam@gmail.com</a></address>
-                <address><a href="https://www.linkedin.com/in/liamcoveney/" target="_blank">linkedin.com/in/liamcoveney</a></address>
-                <address><a href="https://github.com/liam-coveney/Work-Experience" target="_blank">github.com/liam-coveney</a></address>
-
+            <div class="left-content">
+                <h1>Liam Coveney</h1>
+                <h2>Senior, Indiana University</h2>
+                <h3>B.S. in Computer Science</h3>
+                <h4>Expected Graduation: Spring 2026</h4>
+                <div class="addresses">
+                    <address><a href="tel:+13177646005">317-764-6005</a></address>
+                    <address><a href="mailto:coveneyliam@gmail.com">coveneyliam@gmail.com</a></address>
+                    <address><a href="https://www.linkedin.com/in/liamcoveney/" target="_blank">linkedin.com/in/liamcoveney</a></address>
+                    <address><a href="https://github.com/liam-coveney/Work-Experience" target="_blank">github.com/liam-coveney</a></address>
+                </div>
             </div>
+            <span class="material-symbols-outlined" id="menu">menu</span>
+            
+            
             <div class="navigation"id="navigation">
                 <button id="text-boxB" class="disabled"><span class="button-text">Home</span><span class="material-symbols-outlined icon">chevron_right</span></button>
                 <button id="resumeB" class="active"><span class="button-text">My Resume</span><span class="material-symbols-outlined icon">chevron_right</span></button>
@@ -48,9 +53,9 @@
                         iterations to ensure the client got the product that would make them most satisfied. It includes media from and about shows
                         including pictures and blog posts, hosts articles written by creatives, and provides a calendar promoting events and 
                         giving artists and venues a way to connect with each other to more easily book shows. I plan to expand the website throughout
-                        this year to include a section for selling merchandise for which I will receive a small commission, and to allow for more user
+                        this year to include a section for selling merchandise which I will receive a small commission for, and to allow for more users
                         interaction including a place for comments and reactions. I hope to expand this to be able to work with other artists and help
-                        them fulfill their needs for an online presence. Check out the website!
+                        them fulfill their online presence needs. Check out the website!
                     </p>
                 </div>
                 <div class="textSection">
@@ -58,12 +63,12 @@
                     <p>I'm currently developing an app called RaveReview that will allow users to connect with each other and share experieneces they've had at concerts and 
                         live events. Shows, Venues, Tours, and Artists have ratings on a scale from 1-11, with users leaving individual reviews of their 
                         experience and pictures/short videos from the shows viewable by their friends and the entire app community. I'm developing the app
-                         in XCode using Swift with SwiftUI. The project is nearing completion, connected to Firebase, and is close to having full functionality.
+                         in XCode using Swift with SwiftUI and the project is nearing completion, connected to Firebase, and is close to having full functionality.
                     </p>
                 </div>
                 <div class="textSection">
                     <h2>J.M. DREW</h2>
-                    <p>Summer 2025 I had the pleasure of interning for J.M. DREW LLC, an advising firm for 
+                    <p>Last summer I had the pleasure of interning for J.M. DREW LLC, an advising firm for 
                         Patient Access and Product Distribution for Specialty Pharmeceuticals and Healthcare. I 
                          analyzed and reported on trends in the Specialty Pharmeceuticals industry, and worked
                          with fellow interns and professionals to deliver projects and presentations on my findings.
@@ -72,24 +77,23 @@
 
                 <div class="textSection">
                     <h2>Catan A.I.</h2>
-                    <p>For my final project in one of my A.I. classes, collaborating with 2 classmates using Github, I developed a model
+                    <p>For my final project in an A.I. class I took, collaborating with 2 classmates using Github I developed a model
                         that is able to make intelligent decisions in the game of Catan. We used a forward checking
                         n-max algorithm that achieved significant success against bots and human players, with a 95% win rate against random
                         bots and significantly higher average points earned in a game. Our model differs
                         from others online by implementing trading and smart decision making for the first two(settlement) rounds.
                         This allows for a more complete playthrough of the game whereas others focus on just the main game rounds 
-                        and many without trading. We tested our A.I. player using a model we adapted from
-                        <a href="https://github.com/kvombatkere/Catan-AI.git" target="_blank" id="linkToPage">another github project</a> online.
-                         This
+                        and many without trading. We tested our A.I. player using a model we adapted from one online on
+                        <a href="https://github.com/kvombatkere/Catan-AI.git" target="_blank" id="linkToPage">another github project</a>. This
                         project was based on a similar idea, but we made sure to differ ours from theirs as mentioned above. 
-                        See my team's full project and report on my github linked on the side. If you'd like to play/watch it yourself 
+                        See my team's full project and report on my github linked on the side. if you'd like to play/watch it yourself 
                         download the files on my github and run HumanGame.py or BotGame.py
                         depending on whether you want to play or not. Watch it play a game agains random bots below!
                          It's one quick game but you can see that our player (Red) makes much more intelligent structures than the bots and 
                          prioritizes game mechanics that maximize points: Longest Road, Largest Army, and building settlements tactically
                          for the most rolls and resources.
                     </p>
-                    <video width="800" controls muted>
+                    <video controls muted>
                         <source src="images/CatanGameDemo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -120,7 +124,7 @@
                         gathers art and media from a lot of the creative and arts community in Bloomington and puts it all together.
                          I've had the pleasure of contributing through a column where I review my favorite new albums. Check out some of my reviews below!
                     </p>
-                    <object data="/images/Zine-Album-Reviews.pdf" type="application/pdf" width="100%" height="500px">
+                    <object data="/images/Zine-Album-Reviews.pdf" type="application/pdf" width="85%" height="500px">
                         <p>Unable to display PDF file. <a href="/images/Zine-Album-Reviews.pdf">Download</a> instead.</p>
                     </object>
                     <h3>My Radio Show</h3>
@@ -149,12 +153,11 @@
             <img id="resPng" src="images/resume.jpg" alt="my resume">
             </div>
             <div class="text hidden"id="skills">
-                <h1>About My Skills + Proficiencies</h1>
-                <h2>Hover to learn more</h2>
+                <h1>About My Skills</h1>
+                <h2>Hover/Click to learn more</h2>
                 <ul>
                     <li> <div class="grouping" id="languages">
                         <h2>Programming Languages</h2>
-
                         <ul>
                             <li><div class="skillModal">
                                     <div class="skill-front"><img src="images/Java.png" alt="Java Logo"><h3>Java</h3></div>
@@ -335,12 +338,12 @@
                     After Catan night on Wednesday I get poke bowls with my radio cohosts before our show, host a movie or mario kart night every Saturday,
                     and there's no better feeling than helping my friends when something in their car isn't working. 
                     I'm lucky enough to be close with a lot of talented people and have
-                    been able to work with them on projects, whether mine or theirs. My friends have designed websites I then created,
+                    been able to work with them on projects, be them mine or theirs. My friends have designed websites I then created,
                      helped me come up with branding strategies, and brainstormed names for my app. 
                     
                 </p>
                 <img src="images/goodPicOfMe2.jpg" alt="Local Music Festival Crowd focused on me" id="amp">
-                <p>I have diverse academic interests, supplementing my STEM curriculum with literature-heavy Philosophy classes
+                <p>I have diverse academic interests, supplementing my STEM curriculum with literature heavy Philosophy classes
                     and by exploring whatever historical topic I find interesting at the time; recently I've been interested
                     in the origins of different religions and the commonalities between them. While I love to solve a Computer Science puzzle
                     with technical thinking, I also really enjoy studying and reflecting on human topics.

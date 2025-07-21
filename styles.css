@@ -8,8 +8,8 @@ body{
     height:100%;
     height:100dvh;
     padding-bottom: env(safe-area-inset-bottom);
-}
 
+}
 h1{
     font-family: "sofia-pro-condensed", sans-serif;
     font-weight: 900;
@@ -101,13 +101,11 @@ a, button{
 #left{
     position:fixed;
     height: calc(var(--vh, 1vh) * 100);
-    
     margin-left:0;
     
     display:flex;
     flex-flow:column;
     margin-bottom:0;
-    padding-bottom:5px;
     /* background-color:rgb(173, 216, 230); */
     background-color: rgb(184, 204, 162);
     h1{
@@ -136,7 +134,9 @@ a, button{
     object-fit:contain;
     margin-top:15px;
 }
-
+#menu{
+    display:none;
+}
 .addresses{
     
     margin:0 auto;
@@ -234,6 +234,7 @@ h1{
     }
 }
 video{
+    width:85%;
     margin-bottom:20px;
 }
 .BF-Button{
@@ -394,4 +395,161 @@ li:hover > .skillModal{
 }
 #racePic{
     width:80%;
+}
+@media screen and (max-width:1000px) {
+    .resume-Download{
+        width:fit-content;
+        padding:2%;
+        border: 2px solid rgb(184, 204, 162);
+        margin:0 auto;
+        position:relative;
+        display:inline-block;
+        margin:0 auto;
+        margin-top:10px;
+        top:0;
+        left:0;
+        color:black;
+        text-decoration:none;
+    }
+}
+@media screen and (max-width:800px) {
+    .container{
+        display:flex;
+        flex-flow:column nowrap;
+        text-align:center;
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+    #left{
+        position:relative;
+        width:100%;
+        margin-left:0;
+        height:fit-content;
+        display:flex;
+        flex-flow:row;
+        margin-bottom:0;
+        /* background-color:rgb(173, 216, 230); */
+        background-color: rgb(184, 204, 162);
+        h1{
+            margin-top:10px;
+        }
+        h2{
+            margin-top:10px;
+            font-size:16px;
+            margin-bottom:2px;
+        }
+        h3{
+            margin-top:0;
+            margin-bottom:0px;
+        }
+        h4{
+            margin-top:0;
+            font-size:12px;
+        }
+        
+    }
+    .navigation{
+        position:fixed;
+        padding-top:80px;
+        top:0;
+        right:-100%;
+        width:100%;
+        height:100%;
+        transition: right 0.3s ease-in-out;
+        z-index:30;
+        background-color: rgb(184, 204, 162);
+    }
+    .navigation.show{
+        left:0;
+    }
+    #pf{
+        align-self:baseline;
+        margin-left:2%;
+        width:15%;
+        min-width:150px;
+        border-radius:180px;
+        object-fit:contain;
+        margin-top:15px;
+        margin-right:2%;
+    }
+    a{
+        font-size:12px;
+    }
+    h1{
+        font-size:18px;
+    }
+    h2{
+        font-size:16px;
+    }
+    h3{
+        font-size:14px;
+    }
+    p{
+        font-size:10px;
+    }
+    #menu{
+        display:inline-block;
+        position:fixed;
+        top:20px;
+        right:10px;
+        font-size:30px;
+        cursor: pointer;
+        z-index:40;
+    }
+    #right-home{
+        margin-left:0;
+        width:100%;
+        h1{
+            margin-top:15px;
+        }
+    
+    }
+    #text-box{
+        width:95%;
+        margin-left:3%;
+        h2{
+            text-align: left;
+            padding-top:20px;
+            
+        }
+        h3{
+            padding-top:20px;
+        }
+        p{
+            font-size:14px;
+            line-height:1.3em;
+            text-align:left;
+            padding-bottom:10px;
+            
+        }
+    }
+    .resume-Download{
+        width:fit-content;
+        padding:2%;
+        border: 2px solid rgb(184, 204, 162);
+        margin:0 auto;
+        position:relative;
+        display:inline-block;
+        margin:0 auto;
+        margin-top:10px;
+        top:0;
+        left:0;
+        color:black;
+        text-decoration:none;
+    }
+    #about{
+    
+        h1, p{
+            text-align:left;
+            max-width:95%;
+            margin-left:3%;
+        }
+    }
+    #jamokers{
+        width:66%;
+        margin:0 auto;
+        margin-bottom:20px;
+    }
+    
 }

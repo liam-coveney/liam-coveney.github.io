@@ -8,7 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const sections=rightContainer.querySelectorAll('.text');
     const ABME = document.getElementById("linkToPage");
     const abmeID = "aboutB";
+    const menuIcon = document.getElementById("menu");
+    const nav = document.getElementById("navigation");
     function show(idToShow){
+        nav.classList.toggle("show")
+        document.body.classList.toggle("menu-open");
         sections.forEach(section =>{
             if(!section.classList.contains('hidden')){
                 section.classList.add('hidden')
@@ -24,6 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     setViewportHeight();
     window.addEventListener('resize', setViewportHeight);
+    
+
+    menuIcon.addEventListener("click", () => {
+        nav.classList.toggle("show");
+        document.body.classList.toggle("menu-open");
+    });
     if (navigationDiv) {
         
         const buttons = navigationDiv.querySelectorAll('button');
