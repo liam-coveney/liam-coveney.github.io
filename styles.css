@@ -476,6 +476,9 @@ li:hover > .skillModal{
     a{
         font-size:12px;
     }
+    button{
+        color:black;
+    }
     h1{
         font-size:18px;
     }
@@ -550,6 +553,17 @@ li:hover > .skillModal{
         width:66%;
         margin:0 auto;
         margin-bottom:20px;
+    }
+    #zine{
+        width:99%;
+    }
+    .grouping{
+        ul{
+            li{
+                width:175px;
+            }
+        }
+        
     }
     
 }
