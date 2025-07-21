@@ -4,6 +4,7 @@ function setViewportHeight() {
         document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 setViewportHeight();
+window.scrollTo(0,0);
 document.addEventListener('DOMContentLoaded', function() {
 
 
