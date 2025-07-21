@@ -14,12 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const abmeID = "aboutB";
     const menuIcon = document.getElementById("menu");
     const nav = document.getElementById("navigation")
-    window.addEventListener("beforeunload", function () {
-        window.scrollTo(0, 0);
+    window.addEventListener("load", function () {
+    // Ensures scroll happens after layout and content settle
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+        }, 0);
     });
 
-    window.addEventListener("load", function () {
-        setTimeout(() => window.scrollTo(0, 0), 0);
+    window.addEventListener("beforeunload", function () {
+        window.scrollTo(0, 0);
     });
     function show(idToShow){
         nav.classList.toggle("show")
