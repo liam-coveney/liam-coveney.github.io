@@ -4,9 +4,8 @@ function setViewportHeight() {
         document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 setViewportHeight();
-window.scrollTo(0,0);
 document.addEventListener('DOMContentLoaded', function() {
-
+    window.scrollTo(0,0);
 
     const navigationDiv = document.querySelector('.navigation');
     const rightContainer=document.querySelector('.rightContainer');
@@ -14,13 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const ABME = document.getElementById("linkToPage");
     const abmeID = "aboutB";
     const menuIcon = document.getElementById("menu");
-    const nav = document.getElementById("navigation");
+    const nav = document.getElementById("navigation")
+    window.addEventListener("beforeunload", function () {
+        window.scrollTo(0, 0);
+    });
+
+    window.addEventListener("load", function () {
+        setTimeout(() => window.scrollTo(0, 0), 0);
+    });
     function show(idToShow){
         nav.classList.toggle("show")
         document.body.classList.toggle("menu-open");
         sections.forEach(section =>{
             if(!section.classList.contains('hidden')){
-                section.classList.add('hidden')
+                section.classList.add('hidden');
             }
             if(section.id===idToShow){
                 section.classList.remove('hidden');
