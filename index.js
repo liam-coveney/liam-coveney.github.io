@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
     
-    window.addEventListener('resize', setViewportHeight);
+    window.addEventListener('resize', setViewportHeight());
     
 
     menuIcon.addEventListener("click", () => {
