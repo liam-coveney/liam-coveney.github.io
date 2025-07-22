@@ -129,6 +129,8 @@ a, button{
     }
     h4{
         margin-top:0;
+        margin-bottom:2px;
+        
     }
     width:23%;
     
@@ -452,8 +454,6 @@ li:hover > .skillModal{
         }
         h4{
             margin-top:0;
-            margin-bottom:1px;
-            padding-bottom:1px;
             font-size:12px;
         }
         
